@@ -1,6 +1,7 @@
 import os
 import dj_database_url
 from pathlib import Path
+from decouple import config
 """
 Django settings for kkdigital project.
 
@@ -23,14 +24,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-90#6nbusl%x&!ebwo08@%g9(!e*j&ld(2)4-=8!yi(ggbqpa8#'
+SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", "False") == "True"
+DEBUG = config("DEBUG", default=False, cast=bool)
 ALLOWED_HOSTS = [
     ".vercel.app",
-    "127.0.0.1",
     "localhost",
+    "127.0.0.1",
+]
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.vercel.app",
 ]
 
 # Application definition
@@ -82,8 +86,9 @@ WSGI_APPLICATION = 'kkdigital.wsgi.application'
 
 DATABASES = {
     "default": dj_database_url.config(
-        default="postgresql://postgres:1993@localhost:5432/kkdigital_db",
-        conn_max_age=600
+        default=config("DATABASE_URL"),
+        conn_max_age=600,
+        ssl_require=True,
     )
 }
 # Password validation
@@ -126,3 +131,5 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
