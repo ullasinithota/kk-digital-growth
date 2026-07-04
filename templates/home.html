@@ -39,101 +39,38 @@
     <div class="hero-left">
 
         <div class="rating-badge">
-            ⭐ 4.9/5 • Highly reviewed on G2
+            ⭐ 4.9/5 - Highly reviewed on G2
         </div>
 
         <h1 class="hero-heading">
 
-            Building Digital Solutions
+            Building digital solutions
 
             <br>
 
-            That Scale Your Business
-
-            <br>
-
-            <span class="highlight">
-                websites, apps & ERPs
-            </span>
-
-            <br>
-
-            <span class="highlight">
-                built to deliver results
-            </span>
+            that <span class="highlight">scale your business.</span>
 
         </h1>
 
         <p class="hero-description">
-
-            KK Digital Growth is the technology partner that builds websites,
-            mobile apps, ERP systems and custom software your business
-            actually needs.
-
-            Transparent pricing, fixed timelines, and full project visibility
-            mean you always know exactly what you're getting.
-
+            KK Digital Growth builds custom websites, mobile apps, and Erp systems your business actually needs—with transparent pricing and fixed timelines.
         </p>
 
         <div class="hero-buttons">
 
             <a href="{% url 'consultation' %}" class="hero-btn primary">
-               <span>Book A Free Consultation</span>
+               <span>Free Consultation</span>
                <i class="fa-regular fa-calendar-check btn-icon"></i>
             </a>  
 
             <a href="{% url 'services' %}" class="hero-btn secondary">
-               <span>See Our Services</span>
+               <span>Our Services</span>
                <i class="fa-solid fa-arrow-right btn-icon"></i>
             </a>
 
         </div>
-        <div class="hero-testimonial-slider">
-            <div class="hero-testimonial-track-wrapper">
-                <div class="hero-testimonial-track">
-                    {% for item in testimonials %}
-                    <div class="hero-testimonial-slide {% if forloop.first %}active{% endif %}">
-                        <div class="hero-review-top">
-                            <!-- Client Logo (using exact logo of the website) -->
-                            <div class="hero-client-logo-wrap">
-                                <img src="{% static item.logo_image %}" alt="{{ item.client_name }}" class="hero-client-logo">
-                            </div>
 
-                            <div class="hero-review-content">
-                                <div class="hero-review-meta">
-                                    <span class="hero-review-industry">{{ item.industry | upper }}</span>
-                                    <div class="hero-review-stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                </div>
-                                <p class="hero-review-quote">"{{ item.feedback_text }}"</p>
-                                <h4>
-                                    {{ item.author }}
-                                    <span>{{ item.designation }}, {{ item.client_name }}</span>
-                                </h4>
-                            </div>
-
-                            <div class="hero-review-badge">
-                                G
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-
-            <!-- Slide Dots -->
-            <div class="hero-testimonial-dots">
-                {% for item in testimonials %}
-                <span class="hero-testimonial-dot {% if forloop.first %}active{% endif %}" data-slide="{{ forloop.counter0 }}"></span>
-                {% endfor %}
-            </div>
-        </div>
-
+    
     </div>
 
     <div class="hero-right">
@@ -163,7 +100,7 @@
                                 </div>
                             </div>
                             <div class="service-slide-body">
-                                <p class="service-slide-desc">We build fast, scalable, conversion-focused websites that look great and perform even better.</p>
+                                 <p class="service-slide-desc">We build fast, scalable, and conversion-focused websites.</p>
                                 <div class="service-slide-features">
                                     <span><i class="fa-regular fa-image"></i> Custom Website Design</span>
                                     <span><i class="fa-solid fa-cart-shopping"></i> E-commerce Development</span>
@@ -194,7 +131,7 @@
                                 </div>
                             </div>
                             <div class="service-slide-body">
-                                <p class="service-slide-desc">Native and cross-platform mobile apps designed for user growth and high engagement.</p>
+                                 <p class="service-slide-desc">We build native and cross-platform apps designed for growth.</p>
                                 <div class="service-slide-features">
                                     <span><i class="fa-brands fa-apple"></i> iOS Development</span>
                                     <span><i class="fa-brands fa-android"></i> Android Development</span>
@@ -220,12 +157,12 @@
                                 </div>
                                 <div class="service-slide-title-info">
                                     <span class="service-slide-tag">SERVICES</span>
-                                    <h3>ERP Development</h3>
+                                    <h3>Erp Development</h3>
                                     <p class="service-slide-subtitle">Inventory • Finance • HR • Operations</p>
                                 </div>
                             </div>
                             <div class="service-slide-body">
-                                <p class="service-slide-desc">Custom ERP systems that connect every part of your business operations under one platform.</p>
+                                 <p class="service-slide-desc">We build custom Erp systems to connect and automate operations.</p>
                                 <div class="service-slide-features">
                                     <span><i class="fa-solid fa-box"></i> Inventory Management</span>
                                     <span><i class="fa-solid fa-money-bill"></i> Finance & Billing</span>
@@ -235,7 +172,7 @@
                             </div>
                             <div class="service-slide-footer">
                                 <a href="{% url 'consultation' %}" class="service-slide-btn">
-                                    <span>Start Your ERP Project</span>
+                                    <span>Start Your Erp Project</span>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -256,7 +193,7 @@
                                 </div>
                             </div>
                             <div class="service-slide-body">
-                                <p class="service-slide-desc">Tailor-made software applications and internal tools designed specifically for your workflows.</p>
+                                 <p class="service-slide-desc">We build custom software and tools designed for your workflows.</p>
                                 <div class="service-slide-features">
                                     <span><i class="fa-solid fa-toolbox"></i> Internal Tools</span>
                                     <span><i class="fa-solid fa-star"></i> SaaS Platforms</span>
@@ -285,7 +222,52 @@
         </div>
     </div>
 
-        
+    <!-- Full-width testimonial slider aligned with page layout -->
+    <div class="hero-testimonial-slider">
+        <div class="hero-testimonial-track-wrapper">
+            <div class="hero-testimonial-track">
+                {% for item in testimonials %}
+                <div class="hero-testimonial-slide {% if forloop.first %}active{% endif %}">
+                    <div class="hero-review-top">
+                        <!-- Client Logo (using exact logo of the website) -->
+                        <div class="hero-client-logo-wrap">
+                            <img src="{% static item.logo_image %}" alt="{{ item.client_name }}" class="hero-client-logo">
+                        </div>
+
+                        <div class="hero-review-content">
+                            <div class="hero-review-meta">
+                                <span class="hero-review-industry">{{ item.industry | upper }}</span>
+                                <div class="hero-review-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="hero-review-quote">"{{ item.feedback_text }}"</p>
+                            <h4>
+                                {{ item.author }}
+                                <span>{{ item.designation }}, {{ item.client_name }}</span>
+                            </h4>
+                        </div>
+
+                        <div class="hero-review-badge">
+                            G
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Slide Dots -->
+        <div class="hero-testimonial-dots">
+            {% for item in testimonials %}
+            <span class="hero-testimonial-dot {% if forloop.first %}active{% endif %}" data-slide="{{ forloop.counter0 }}"></span>
+            {% endfor %}
+        </div>
+    </div>
 
     </div>
 
@@ -294,15 +276,12 @@
     <div class="home-container">
         <div class="brands-left">
             <h2>
-                Startups, retailers and growing businesses building
-
-                <span>scalable software</span>
-
+                Startups, retailers and growing businesses
                 <br>
-
-                <span>through custom development</span>
+                building <span class="brand-highlight" style="white-space: nowrap;">scalable software</span>
+                <br>
+                through <span class="brand-highlight" style="white-space: nowrap;">custom development.</span>
             </h2>
-
         </div>
 
         <div class="brands-right-marquee">
@@ -395,8 +374,8 @@
 <section class="results-section">
     <div class="home-container">
         <h2 class="results-title">
-            <span>Over 100 businesses</span>
-            have launched and scaled with KK Digital Growth
+            <span>Over 100+ businesses</span>
+            have launched and scaled with <span class="nowrap-brand" style="white-space: nowrap;">KK Digital Growth</span>
         </h2>
 
     <div class="results-grid">
@@ -543,7 +522,7 @@
     <div class="home-container">
         <h2 class="comparison-title">
             Most dev agencies aren't built for long-term partnership.
-            KK Digital Growth
+            <span style="white-space: nowrap;">KK Digital Growth</span>
             <span>puts you first.</span>
         </h2>
 

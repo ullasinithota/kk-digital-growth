@@ -1,10 +1,7 @@
 /* === STYLES SPLIT FROM STYLE.CSS === */
-/*==========================
 TECHNOLOGY SECTION
-==========================*/
-
 .tech-section{
-    padding:40px 8% 40px 8%;
+    padding:40px 0;
     background:#f7f9fc;
 }
 
@@ -14,14 +11,14 @@ margin-bottom:70px;
 }
 
 .tech-heading h2{
-font-size:48px;
+font-size:32px;
 font-weight:700;
 color:#173b72;
-margin-bottom:15px;
+margin-bottom:12px;
 }
 
 .tech-heading span{
-background:#d89228;
+background:#F79421;
 padding:6px 18px;
 color:white;
 border-radius:8px;
@@ -102,10 +99,10 @@ color:#1fc8da;
 }
 
 .tech-card i{
-font-size:20px;
-color:#1fd2de;
-width:25px;
-transition:.4s;
+    font-size:16px; /* decreased from 20px */
+    color:#1fd2de;
+    width:25px;
+    transition:.4s;
 }
 
 .tech-card:hover i{
@@ -137,12 +134,12 @@ animation:up 1.3s ease forwards;
 /* KK DIGITAL GROWTH - ABOUT US STYLESHEET*/
 :root {
     --primary-blue: #123F6B;
-    --accent-orange: #C9861E;
+    --accent-orange: #F79421;
     --bg-white: #ffffff;
     --bg-light: #f8fafc;
     --bg-glow: rgba(18, 63, 107, 0.03);    
     /* Typography Colors */
-    --text-primary: #0f172a;
+    --text-primary: #1b3956;
     --text-secondary: #475569;
     --text-muted: #64748b;
     /* Borders & Spacing */
@@ -164,7 +161,7 @@ section {
     overflow: hidden;
 }
 .about-section-container {
-    max-width: 1560px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 80px;
     width: 100%;
@@ -189,12 +186,12 @@ section {
     margin-bottom: 14px;
 }
 .section-title h2 {
-    font-size: 46px;
+    font-size: 32px;
     font-weight: 900;
-    line-height: 1.2;
+    line-height: 1.25;
     color: var(--text-primary);
-    letter-spacing: -0.02em;
-    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
 }
 .section-title h2 span {
        color: var(--accent-orange);
@@ -241,7 +238,7 @@ section {
     right: -50px;
 }
 .about-container {
-    max-width: 1560px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 80px;
     position: relative;
@@ -269,19 +266,19 @@ section {
     margin-bottom: 16px;
 }
 .about-left h1 {
-    font-size: 64px;
+    font-size: 44px;
     font-weight: 900;
-    line-height: 1.15;
+    line-height: 1.2;
     color: var(--text-primary);
-    letter-spacing: -0.03em;
-    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+    margin-bottom: 15px;
 }
 .about-left h1 span {
     color: var(--accent-orange);
 }
 .about-left p {
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.65;
     color: var(--text-secondary);
     max-width: 580px;
     margin-bottom: 24px;
@@ -315,14 +312,16 @@ section {
     box-shadow: 0 8px 20px rgba(18, 63, 107, 0.25);
 }
 .hero-btn.secondary {
-    background: var(--bg-white);
-    color: var(--primary-blue);
-    border: 2px solid var(--border-color);
+    background: #0c3b65; /* updated from white background */
+    color: #fff; /* updated from blue text */
+    border: none; /* removed border */
+    box-shadow: 0 6px 20px rgba(12, 59, 101, 0.3);
 }
 .hero-btn.secondary:hover {
-    background: var(--bg-light);
-    border-color: var(--primary-blue);
+    background: #11d6d5 !important; /* cyan glow hover */
+    color: #0c3b65 !important;
     transform: translateY(-3px);
+    box-shadow: 0 14px 36px rgba(17, 214, 213, 0.45);
 }
 /* Statistics Floating Cards */
 .about-right {
@@ -352,7 +351,7 @@ section {
     margin-bottom: 12px;
 }
 .floating-card h3 {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 900;
     color: var(--primary-blue);
     margin-bottom: 4px;
@@ -543,7 +542,7 @@ section {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.tech-card {
+.technology-grid .tech-card {
     background: var(--bg-white);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius-lg);
@@ -552,27 +551,27 @@ section {
     transition: var(--transition-smooth);
     box-shadow: var(--shadow-subtle);
 }
-.tech-card:hover {
+.technology-grid .tech-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-hover);
     border-color: var(--accent-orange);
 }
-.tech-card i {
+.technology-grid .tech-card i {
     font-size: 42px;
     margin-bottom: 12px;
     display: inline-block;
     transition: var(--transition-smooth);
 }
-.tech-card:hover i {
+.technology-grid .tech-card:hover i {
     transform: scale(1.15) rotate(8deg);
 }
-.tech-card h3 {
+.technology-grid .tech-card h3 {
     font-size: 22px;
     font-weight: 800;
     color: var(--text-primary);
     margin-bottom: 6px;
 }
-.tech-card p {
+.technology-grid .tech-card p {
     font-size: 15px;
     color: var(--text-muted);
     margin: 0;
@@ -640,12 +639,20 @@ section {
 .progress-fill {
     height: 100%;
     border-radius: 999px;
-    transition: var(--transition-smooth);
+    width: 0%; /* initial width */
+    transition: width 1.5s cubic-bezier(0.1, 0.76, 0.55, 0.94); /* dynamic transition */
 }
-.performance { width: 98%; background: linear-gradient(90deg, #3b82f6, var(--primary-blue)); }
-.seo { width: 95%; background: linear-gradient(90deg, #ffcc00, var(--accent-orange)); }
-.security { width: 100%; background: linear-gradient(90deg, #10b981, #059669); }
-.mobile { width: 100%; background: linear-gradient(90deg, #8b5cf6, #6366f1); }
+
+/* Define target widths under active animation state */
+.animate-progress .performance { width: 98%; }
+.animate-progress .seo { width: 95%; }
+.animate-progress .security { width: 100%; }
+.animate-progress .mobile { width: 100%; }
+
+.performance { background: linear-gradient(90deg, #3b82f6, var(--primary-blue)); }
+.seo { background: linear-gradient(90deg, #ffcc00, var(--accent-orange)); }
+.security { background: linear-gradient(90deg, #10b981, #059669); }
+.mobile { background: linear-gradient(90deg, #8b5cf6, #6366f1); }
 .dashboard-right {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -667,7 +674,7 @@ section {
     box-shadow: var(--shadow-hover);
 }
 .stat-card h2 {
-    font-size: 46px;
+    font-size: 36px;
     font-weight: 900;
     color: var(--accent-orange);
     margin-bottom: 4px;

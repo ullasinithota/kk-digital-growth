@@ -134,7 +134,7 @@
 }
 
 .service-slide-subtitle {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     color: #8a99ad;
     margin: 4px 0 0 0;
@@ -167,7 +167,7 @@
 }
 
 .service-slide-features i {
-    color: #C9861E;
+    color: #F79421;
     font-size: 14px;
 }
 
@@ -199,8 +199,8 @@
 }
 
 .service-slide-btn:hover {
-    background: #C9861E;
-    border-color: #C9861E;
+    background: #F79421;
+    border-color: #F79421;
     color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(201, 134, 30, 0.3);
@@ -231,8 +231,8 @@
 }
 
 .slider-arrow:hover {
-    background: #C9861E;
-    border-color: #C9861E;
+    background: #F79421;
+    border-color: #F79421;
     color: #ffffff;
     box-shadow: 0 0 10px rgba(201, 134, 30, 0.4);
 }
@@ -266,7 +266,7 @@
 }
 
 .slider-dots .slider-dot.active {
-    background: #C9861E;
+    background: #F79421;
     transform: scale(1.4);
 }
 

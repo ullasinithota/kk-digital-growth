@@ -13,3 +13,10 @@
 @import url("animations.css");
 @import url("case-studies.css");
 @import url("responsive.css");
+
+/* Global Heading Overrides */
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-size: 30px !important;
+    color: #0c3b65 !important;
+}

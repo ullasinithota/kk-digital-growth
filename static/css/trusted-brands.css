@@ -18,29 +18,28 @@
 
 /* LEFT SIDE: HEADING */
 .brands-left {
-    width: 40%;
+    width: 50%; /* increased from 40% */
 }
 
 .brands-left h2 {
-    font-size: 42px;
-    line-height: 1.5;
+    font-size: 25px; /* decreased from 32px */
+    line-height: 1.35; /* increased from 1.25 for clean spacing */
     color: #123F6B;
     font-weight: 700;
     margin: 0;
 }
 
-.brands-left span {
-    background: #C9861E;
+.brands-left span.brand-highlight {
+    background: #F79421;
     color: white;
-    padding: 4px 12px;
+    padding: 2px 6px;
     border-radius: 4px;
-    display: inline-block;
-    margin: 4px 0;
+    display: inline; /* wraps exactly to text width */
 }
 
 /* RIGHT SIDE: SCROLLING MARQUEE */
 .brands-right-marquee {
-    width: 56%;
+    width: 46%; /* decreased from 56% */
     overflow: hidden;
     position: relative;
     display: flex;
@@ -164,7 +163,7 @@
 
 /* PetDesk */
 .petdesk {
-    color: #ea9652;
+    color: #F79421;
 }
 
 /* Stax */

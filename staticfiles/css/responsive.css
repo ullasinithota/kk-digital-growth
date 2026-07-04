@@ -178,10 +178,10 @@ text-align:center;
 
 @media(max-width:992px){
 .clients-hero h1{
-font-size:72px;
+font-size:38px;
 }
 .clients-hero p{
-font-size:18px;
+font-size:16px;
 }
 }
 
@@ -190,23 +190,23 @@ font-size:18px;
 height:75vh;
 }
 .clients-hero h1{
-font-size:40px;
+font-size:32px;
 }
 .hero-badge{
 font-size:11px;
 padding:10px 20px;
 }
 .clients-hero p{
-font-size:16px;
+font-size:14.5px;
 }
 }
 
 @media(max-width:992px){
 .platform-title h2{
-font-size:42px;
+font-size:30px;
 }
 .platform-content p{
-font-size:28px;
+font-size:18px;
 }
 .platform-card img{
 width:140px;
@@ -252,7 +252,7 @@ grid-template-columns:repeat(2,1fr);
 grid-template-columns:1fr;
 }
 .contact-title h2{
-font-size:42px;
+font-size:30px;
 }
 .contact-card{
 padding:28px;
@@ -382,7 +382,7 @@ padding:28px;
         padding: 40px 20px !important;
     }
     .consult-left h1 {
-        font-size: 38px !important;
+        font-size: 32px !important;
         line-height: 1.2 !important;
     }
     .consult-right {

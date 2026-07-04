@@ -41,20 +41,21 @@
 }
 
 .contact-title h2{
-    font-size:58px;
+    font-size:34px;
     color:#14284d;
     font-weight:800;
-    line-height:1.2;
+    line-height:1.25;
 }
 
 .contact-title span{
-    color:#ff7a00;
+    color:#F79421;
 }
 
 .contact-title p{
-    margin-top:18px;
-    font-size:22px;
-    color:#67768f;
+    margin-top:15px;
+    font-size:16px;
+    line-height:1.65;
+    color:#475467;
     max-width:700px;
     margin-inline:auto;
 }
@@ -167,17 +168,18 @@
     margin-bottom:60px;
 }
 .contact-title h2{
-    font-size:55px;
+    font-size:34px;
     font-weight:800;
     color:#17233d;
 }
 .contact-title span{
-    color:#f7931e;
+    color:#F79421;
 }
 .contact-title p{
-    margin-top:18px;
-    color:#6b7280;
-    font-size:18px;
+    margin-top:15px;
+    color:#475467;
+    font-size:16px;
+    line-height:1.65;
 }
 .contact-info-grid{
     display:grid;
@@ -243,8 +245,8 @@
     box-shadow:0 20px 50px rgba(0,0,0,.08);
 }
 .contact-form-container h2{
-    font-size:42px;
-    margin-bottom:35px;
+    font-size:30px;
+    margin-bottom:25px;
 }
 .input-row{
     display:grid;
@@ -318,6 +320,6 @@ grid-template-columns:1fr;
 grid-template-columns:1fr;
 }
 .contact-title h2{
-font-size:40px;
+font-size:28px;
 }
 }

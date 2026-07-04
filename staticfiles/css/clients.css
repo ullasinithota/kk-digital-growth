@@ -84,7 +84,7 @@
 .testimonial-container h2{
     text-align:center;
     color:white;
-    font-size:48px;
+    font-size:34px;
     font-weight:700;
    margin-bottom:25px;
 }
@@ -93,7 +93,7 @@
 .testimonial-bar{
     max-width:900px;
     margin:0 auto 50px;
-    background:#C9861E;
+    background:#F79421;
     color:white;
     text-align:center;
     padding:12px;
@@ -195,7 +195,7 @@
     display: flex;
     gap: 4px;
     margin-bottom: 16px;
-    color: #C9861E; /* Brand gold stars */
+    color: #F79421; /* Brand gold stars */
     font-size: 14px;
     text-align: left;
 }
@@ -310,7 +310,7 @@
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 1px;
-    color: #C9861E; /* Brand gold */
+    color: #F79421; /* Brand gold */
 }
 
 .hero-review-stars {
@@ -375,7 +375,7 @@
 }
 
 .hero-testimonial-dots .hero-testimonial-dot.active {
-    background: #C9861E;
+    background: #F79421;
     transform: scale(1.3);
 }
 /*==================================
@@ -402,23 +402,23 @@ padding:0 20px;
 /* Heading */
 
 .clients-hero h1{
-font-size:68px;
-line-height:1.15;
-font-weight:800px;
+font-size:46px;
+line-height:1.2;
+font-weight:800;
 color:#fff;
-margin-bottom:35px;
+margin-bottom:25px;
 }
 
 .clients-hero span{
-background:#d8932d;
-padding:4px 14px;
-border-radius:8px;
+    background:#F79421;
+    padding:4px 14px;
+    border-radius:8px;
 }
 /* Paragraph */
 
 .clients-hero p{
-font-size:22px;
-line-height:1.8;
+font-size:16px;
+line-height:1.65;
 color:#d2d9e6;
 max-width:760px;
 margin:auto;

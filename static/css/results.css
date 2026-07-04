@@ -14,17 +14,25 @@
 }
 
 .results-title{
-    font-size:40px;
+    font-size:32px;
     color:#123F6B;
     margin-bottom:45px;
-    line-height:1.3;
+    line-height:1.25;
 }
 
 .results-title span{
-    background:#D89029;
+    background:#F79421;
     color:#fff;
     padding:6px 14px;
     border-radius:6px;
+}
+
+.results-title span.nowrap-brand {
+    background: transparent !important;
+    color: inherit !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
 .results-grid{
@@ -54,7 +62,7 @@
 }
 
 .result-card h3{
-    font-size:60px;
+    font-size:48px;
     color:#123F6B;
     margin:10px 0;
 }

@@ -438,5 +438,52 @@
 
     <!-- Footer -->
     {% include 'footer.html' %}
+
+    <!-- Metrics Animation Script -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Trigger CSS width transition
+                    entry.target.classList.add("animate-progress");
+                    
+                    // Trigger counting numbers animation
+                    animateCounters();
+                    
+                    // Unobserve after running once
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        const dashboard = document.querySelector(".dashboard-section");
+        if (dashboard) {
+            observer.observe(dashboard);
+        }
+
+        function animateCounters() {
+            const spans = document.querySelectorAll(".card-head span");
+            spans.forEach(span => {
+                const target = parseInt(span.textContent);
+                let current = 0;
+                const duration = 1500; // sync with CSS transition (1.5 seconds)
+                const frames = 60;
+                const increment = target / frames;
+                const stepTime = duration / frames;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        span.textContent = target + "%";
+                        clearInterval(timer);
+                    } else {
+                        span.textContent = Math.floor(current) + "%";
+                    }
+                }, stepTime);
+            });
+        }
+    });
+    </script>
 </body>
 </html>

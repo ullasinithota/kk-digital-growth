@@ -12,15 +12,15 @@
 
 .comparison-title{
     text-align:center;
-    font-size:40px;
-    line-height:1.35;
+    font-size:32px;
+    line-height:1.25;
     color:#123F6B;
     max-width:900px;
-    margin:0 auto 50px;
+    margin:0 auto 40px;
 }
 
 .comparison-title span{
-    background:#C9861E;
+    background:#F79421;
     color:white;
     padding:4px 14px;
    border-radius:6px;
@@ -106,7 +106,7 @@
 
 .comparison-btn{
     display:inline-block;
-    background:#C9861E;
+    background:#F79421;
     color:white;
     text-decoration:none;
     padding:18px 40px;

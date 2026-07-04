@@ -7,7 +7,7 @@ CASE STUDIES - LISTING & HERO
     padding: 100px 0;
     color: #fff;
     text-align: center;
-    border-bottom: 4px solid #d8932d;
+    border-bottom: 4px solid #F79421;
     position: relative;
     overflow: hidden;
 }
@@ -44,18 +44,18 @@ CASE STUDIES - LISTING & HERO
 }
 
 .case-hero h1 {
-    font-size: 64px;
+    font-size: 42px;
     font-weight: 800;
     color: #fff;
-    margin-bottom: 25px;
-    line-height: 1.15;
+    margin-bottom: 20px;
+    line-height: 1.25;
 }
 
 .case-hero p {
-    font-size: 19px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.65;
     color: #cbd5e1;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .case-hero-buttons {
@@ -131,7 +131,7 @@ LISTING CARDS GRID
 .case-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 25px 50px rgba(18, 38, 63, 0.12);
-    border-color: #d8932d;
+    border-color: #F79421;
 }
 
 .case-card-image {
@@ -267,13 +267,13 @@ LISTING CARDS GRID
     font-weight: 600;
     font-size: 14px;
     transition: all 0.3s ease;
-    border: 2px solid #d8932d;
+    border: 2px solid #F79421;
 }
 
 .case-card:hover .view-case-btn {
-    background: #d8932d;
+    background: #F79421;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(216, 147, 45, 0.2);
+    box-shadow: 0 8px 20px rgba(247, 148, 33, 0.2);
 }
 
 /*=========================================
@@ -298,19 +298,19 @@ DETAIL PAGE STYLING
 }
 
 .back-link:hover {
-    color: #d8932d;
+    color: #F79421;
 }
 
 .case-detail-hero {
     background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
     padding: 80px 0;
     color: #fff;
-    border-bottom: 4px solid #d8932d;
+    border-bottom: 4px solid #F79421;
 }
 
 .detail-industry {
     display: inline-block;
-    background: rgba(216, 147, 45, 0.2);
+    background: rgba(247, 148, 33, 0.2);
     color: #fbbf24;
     padding: 6px 14px;
     border-radius: 30px;
@@ -322,13 +322,14 @@ DETAIL PAGE STYLING
 }
 
 .case-detail-hero h1 {
-    font-size: 52px;
+    font-size: 40px;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    line-height: 1.25;
 }
 
 .detail-subtitle {
-    font-size: 20px;
+    font-size: 16px;
     color: #94a3b8;
 }
 
@@ -577,10 +578,10 @@ RESPONSIVE BREAKPOINTS
         gap: 40px;
     }
     .case-hero h1 {
-        font-size: 48px;
+        font-size: 36px;
     }
     .case-detail-hero h1 {
-        font-size: 42px;
+        font-size: 32px;
     }
 }
 
@@ -599,10 +600,10 @@ RESPONSIVE BREAKPOINTS
         text-align: center;
     }
     .case-hero h1 {
-        font-size: 38px;
+        font-size: 30px;
     }
     .case-detail-hero h1 {
-        font-size: 32px;
+        font-size: 26px;
     }
     .detail-card {
         padding: 25px;

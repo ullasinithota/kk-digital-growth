@@ -6,8 +6,8 @@
 }
 
 .card-partner:hover {
-    border-color: #d89029;
-    box-shadow: 0 20px 40px rgba(216, 144, 41, 0.15);
+    border-color: #F79421;
+    box-shadow: 0 20px 40px rgba(247, 148, 33, 0.15);
 }
 
 .card-services:hover {
@@ -33,7 +33,7 @@
     margin: 0;
 }
 
-.card-partner .card-tag { color: #d89029; }
+.card-partner .card-tag { color: #F79421; }
 
 .card-services .card-tag { color: #06c3ec; }
 
@@ -64,7 +64,7 @@
     gap: 8px;
 }
 
-.card-partner .verified { color: #d89029; }
+.card-partner .verified { color: #F79421; }
 
 .card-metrics-details .verified { color: #27ae60; }
 
@@ -127,7 +127,7 @@ body{
 /* Quote Button */
 
 .quote-btn{
-    background:#C9861E;
+    background:#F79421;
     color:white;
     text-decoration:none;
     padding:16px 32px;
@@ -147,7 +147,7 @@ body{
     align-items:center;
     width:260px;
     height:60px;
-    background:#C9861E;
+    background:#F79421;
     color:white;
     text-decoration:none;
     border-radius:8px;
@@ -207,14 +207,14 @@ body{
 }
 
 .consult-left h1{
-    font-size:72px;
+    font-size:44px;
     line-height:1.2;
-   color:#123F6B;
-    margin-bottom:30px;
+    color:#123F6B;
+    margin-bottom:25px;
 }
 
 .orange{
-    background:#C9861E;
+    background:#F79421;
     color:white;
     padding:4px 12px;
    border-radius:4px;
@@ -261,7 +261,7 @@ body{
 
 .consult-right button{
     grid-column:span 2;
-    background:#C9861E;
+    background:#F79421;
     color:white;
     border:none;
     padding:18px;
@@ -335,7 +335,7 @@ body{
 .dot{
     width:28px;
     height:28px;
-    background:#C9861E;   
+    background:#F79421;   
     border-radius:50%;
     display:flex;
     align-items:center;
@@ -412,7 +412,7 @@ body{
 }
 
 .gold{
-    color: #C9861E !important;
+    color: #F79421 !important;
 }
 
 .red{
@@ -427,10 +427,10 @@ body{
 
 .faq-section h2{
     text-align:center;
-    font-size:48px;
+    font-size:34px;
     font-weight:700;
     color:#123F6B;
-   margin-bottom:50px;
+    margin-bottom:35px;
 }
 /* FAQ GRID */
 
@@ -501,7 +501,7 @@ body{
 .case-btn{
     display:inline-block;
     margin-top:50px;
-    background:#C9861E;
+    background:#F79421;
     color:white;
     padding:18px 36px;
     border-radius:10px;
@@ -522,11 +522,11 @@ body{
 }
 
 .bad-card::before{
-    background:linear-gradient(90deg, #C9861E, #e8a54a);
+    background:linear-gradient(90deg, #F79421, #e8a54a);
 }
 
 .bad-card:hover{
-    border-color:#C9861E;
+    border-color:#F79421;
    transform: translateY(-12px) rotate(0deg);
 }
 
@@ -623,16 +623,16 @@ body{
 
 .process-hero h1{
     color:white;
-    font-size:52px;
+    font-size:44px;
     font-weight:800;
     line-height:1.25;
-    margin:28px 0;
+    margin:24px 0;
     max-width:700px;
     z-index:2;
 }
 
 .process-hero h1 span{
-    background:#C9861E;
+    background:#F79421;
     padding:0 12px;
 }
 /* keep 'real results,' on one line, no wrap */
@@ -643,7 +643,7 @@ body{
 }
 
 .highlight-group span {
-    background:#C9861E;
+    background:#F79421;
     padding: 0 12px;
 }
 
@@ -1129,15 +1129,15 @@ margin-bottom:70px;
 }
 
 .section-heading h2{
-font-size:48px;
+font-size:32px;
 font-weight:700;
 color:#14396b;
-margin-bottom:18px;
-line-height:1.3;
+margin-bottom:15px;
+line-height:1.25;
 }
 
 .section-heading span{
-background:#d89228;
+background:#F79421;
 color:white;
 padding:6px 16px;
 border-radius:8px;
@@ -1219,7 +1219,7 @@ transition:.45s;
 
 .orange{
 background:#fff4e7;
-color:#d89228;
+color:#F79421;
 }
 
 .cyan{
