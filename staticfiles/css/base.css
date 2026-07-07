@@ -620,32 +620,15 @@ body{
 }
 
 .process-hero h1{
-    color:white;
     font-size:42px;
     font-weight:800;
-    line-height:1.25;
-    margin:24px 0;
-    max-width:700px;
+    color:#fff;
+    line-height:1.4;
+    margin-bottom:24px;
     z-index:2;
 }
 
-.process-hero h1 span{
-    background:#F79421;
-    padding:3px 6px;
-    border-radius:8px;
-}
-/* keep 'real results,' on one line, no wrap */
 
-.highlight-group {
-    display: inline;
-    white-space: nowrap;
-}
-
-.highlight-group span {
-    background:#F79421;
-    padding: 3px 6px;
-    border-radius: 8px;
-}
 
 .process-hero p{
     color:#B7C4D5;

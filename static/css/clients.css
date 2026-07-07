@@ -449,17 +449,13 @@ padding:0 20px;
 
 .clients-hero h1{
 font-size:42px;
-line-height:1.2;
+line-height:1.4; /* increased from 1.2 to prevent overlap with descenders on the line below */
 font-weight:800;
 color:#fff;
 margin-bottom:25px;
 }
 
-.clients-hero span{
-    background:#F79421;
-    padding:3px 10px;
-    border-radius:8px;
-}
+
 /* Paragraph */
 
 .clients-hero p{
